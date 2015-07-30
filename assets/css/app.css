@@ -1,0 +1,201 @@
+html, body{
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0;
+    padding: 0;
+}
+
+.preview-markdown{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+div.page{
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 2px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+    height: calc(100% - 150px);
+}
+.confirmation{
+    border-top: 1px solid #eee;
+    padding: 10px 10px 40px 10px;
+    border-radius: 2px 2px 0px 0px;
+    text-align: right;
+    background: #eef;
+}
+.confirmation label{
+    color: #666;
+    font-weight: normal;
+}
+.container.no-scroll{
+    height: 100%;
+    overflow: hidden;
+}
+.admin-bar{
+    display: inline-block;
+    height: 40px;
+    background: #eee;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    border-radius: 2px 0px 0px 2px;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+.admin-bar a{
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    background: #eee;
+    display: inline-block;
+}
+.admin-bar a:hover{
+    background: #f5f5f5;
+}
+
+
+
+
+
+
+
+
+.hc-tree{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.hc-tree ul, .hc-tree ol{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+}
+
+.hc-tree li > a.title{
+    color: #000;
+}
+.hc-tree li.folder > a.title:hover{
+    color: #03002f;
+}
+
+
+
+.hc-tree li.folder{
+    cursor: pointer;
+}
+.hc-tree li.folder:hover{
+    color: #03002f;
+}
+.hc-tree li.folder:hover:before{
+    cursor: pointer;
+//content: "\f07c";
+
+}
+.hc-tree li.folder:before{
+    font-family: "FontAwesome";
+    content: "\f07b";
+    margin-right: 3px;
+}
+.hc-tree li.folder.active:before{
+    font-family: "FontAwesome";
+    content: "\f07c";
+    margin-right: 3px;
+}
+
+.hc-tree li.folder ul, .hc-tree li.folder ol{
+    display: none;
+}
+.hc-tree li.active > ul, .hc-tree li.active > ol{
+    display: block;
+}
+.hc-tree li.folder li.article:before{
+    font-family: "FontAwesome";
+    content: "\f15c";
+    margin-right: 3px;
+}
+.hc-tree li.folder li.video:before{
+    font-family: "FontAwesome";
+    content: "\f03d";
+    margin-right: 3px;
+}
+.hc-tree li.folder li.image:before{
+    font-family: "FontAwesome";
+    content: "\f03e";
+    margin-right: 3px;
+}
+.hc-tree li.folder li.user:before{
+    font-family: "FontAwesome";
+    content: "\f007";
+    margin-right: 3px;
+}
+.hc-tree li.folder li.category:before{
+    font-family: "FontAwesome";
+    content: "\f0ae";
+    margin-right: 3px;
+}
+.hc-tree li.folder li.tag:before{
+    font-family: "FontAwesome";
+    content: "\f02b";
+    margin-right: 3px;
+}
+.hc-tree a.standout{
+    color: #000;
+    outline: 2px dotted green;
+}
+
+.admin-pages{
+    border-radius: 3px;
+    border: 1px solid #eee;
+    padding: 10px;
+}
+.admin-pages h3 {
+    margin-top: 0;
+}
+
+.site_logo{
+    width: 400px;
+    max-width: 100%;
+    margin: 20px auto 10px auto;
+    display: block;
+    padding: 10px;
+}
+.power{
+    width: 100px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    opacity: .2;
+    -webkit-transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -ms-transition: opacity .2s ease-in-out;
+    -o-transition: opacity .2s ease-in-out;
+    transition: opacity .2s ease-in-out;
+}
+.power:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+
+dl dt, dl dd{
+    padding: 5px;
+    font-size: 1.2em;
+}
+dl dt{
+    background: #eee;
+}
+dl dd{
+    background: #fff;
+}
+dl dt:first-child{
+    border-radius: 5px 5px 0px 0px;
+}
+dl dd:last-child{
+    border-radius: 0px 0px 5px 5px;
+}
